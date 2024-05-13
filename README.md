@@ -34,7 +34,7 @@ This portfolio website showcases my professional information, skills, projects, 
 
 ## watch live
 
-https://adityashriwas18.github.io/PortFolio/
+https://adityashriwas18.github.io/Aditya-Shriwas-Portfolio/
 
 ## Usage
 
