@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body{
+        overflow-x: hidden;
+      }
+
+      #root {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .jF_DhwXwBFswm5nphXHX {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      nav{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 14px 24px 0px #eaecf1
+      }
+
+      @media (max-width: 977px) {
+        .D9WLyEQaARfWqCTyVrpU {
+          flex-direction: column;
+        }
+        .QAHxuJxRZWb3P_cbR8QA {
+          flex-direction: column;
+        }
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+      <h1>AirCanvas</h1>
+    </nav>
+    <div id="root">
+      <button class="button" onclick="goToAircanvas()">Go to Aircanvas</button>
+      <a herf="{% url 'aircanvas' %}"> go to aircanvas</a>
+    </div>
+
+    <script src="https://unpkg.com/@zegocloud/zego-uikit-prebuilt/zego-uikit-prebuilt.js"></script>
+    <script>
+      window.onload = function () {
+        function getUrlParams(url) {
+          let urlStr = url.split("?")[1];
+          const urlSearchParams = new URLSearchParams(urlStr);
+          const result = Object.fromEntries(urlSearchParams.entries());
+          return result;
+        }
+
+        const roomID =
+          getUrlParams(window.location.href)["roomID"] ||
+          Math.floor(Math.random() * 10000) + "";
+        const userID = Math.floor(Math.random() * 10000) + "";
+        const userName = "userName" + userID;
+        const appID = 294217112;
+        const serverSecret = "1388d73bff8c845818247d3ecaf989f4";
+        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
+          appID,
+          serverSecret,
+          roomID,
+          userID,
+          userName
+        );
+
+        const zp = ZegoUIKitPrebuilt.create(kitToken);
+        zp.joinRoom({
+          container: document.querySelector("#root"),
+          sharedLinks: [
+            {
+              name: "Personal link",
+              url:
+                window.location.protocol +
+                "//" +
+                window.location.host +
+                window.location.pathname +
+                "?roomID=" +
+                roomID,
+            },
+          ],
+          scenario: {
+            mode: ZegoUIKitPrebuilt.VideoConference,
+          },
+
+          turnOnMicrophoneWhenJoining: false,
+          turnOnCameraWhenJoining: false,
+          showMyCameraToggleButton: true,
+          showMyMicrophoneToggleButton: true,
+          showAudioVideoSettingsButton: true,
+          showScreenSharingButton: true,
+          showTextChat: true,
+          showUserList: true,
+          maxUsers: 50,
+          layout: "Auto",
+          showLayoutButton: true,
+        });
+      };
+
+      function goToAircanvas() {
+        // Redirect to Aircanvas project page
+        window.location.href = "{% url 'aircanvas' %}";
+      }
+
+      document.getElementsByClassName(" .QYvze2FiFrLlotTk5Iz7.j23D63w5gwHErsetyquC ").addEventListener("click", () => {
+        console.log("ckicked");
+      });
+    </script>
+  </body>
+</html>
+

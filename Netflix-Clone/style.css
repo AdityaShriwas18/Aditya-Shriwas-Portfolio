@@ -1,0 +1,401 @@
+@font-face {
+  font-family: Netflix;
+  src: url(./NetflixSans_W_Rg\ \(1\).woff2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Netflix;
+  color: #fff;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.page1 {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99c6-438e-824d-32917ce55783/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-position: center center;
+  background-size: cover;
+}
+
+.darkpage {
+  position: absolute;
+  height: 110vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5vw;
+  z-index: 10;
+}
+
+.language select {
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.nav-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signin button {
+  height: 5.5vh;
+  width: 5.5vw;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+
+nav img {
+  height: 7vw;
+}
+
+nav select {
+  width: 10vw;
+  height: 5vh;
+}
+
+#front-text {
+  position: absolute;
+  margin: 25vh 10vh;
+  margin-top: 20%;
+  padding: 0vh 5vw;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#front-text h1 {
+  font-size: 4vw;
+}
+
+#front-text p {
+  font-size: 20px;
+}
+
+#getemail {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+  margin: 25vh 10vh;
+  z-index: 10;
+}
+
+#getemail2 {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  margin: 3vh;
+  z-index: 10;
+}
+
+.emailG {
+  margin-top: 2vh;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input1 {
+  height: 3vh;
+  width: 25vw;
+  background-color: rgb(0 0 0/ 0.5);
+  border: 1px solid rgb(67, 64, 64);
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 17px;
+}
+
+#getemail h3 {
+  text-align: center;
+}
+
+.input2 {
+  height: 8.1vh;
+  width: 15vw;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.movies {
+  height: 20vh;
+  background-color: #000;
+  border-top: 7px solid #3e3232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15vw;
+}
+
+.Img1 {
+  position: relative;
+}
+
+.movies img {
+  height: 60vh;
+  z-index: 10;
+  position: relative;
+}
+
+video {
+  height: 32.2vh;
+  position: absolute;
+  top: 21%;
+  right: 15%;
+  z-index: 9;
+}
+
+.page4 video {
+  height: 28vh;
+  position: absolute;
+  top: 10%;
+  right: 19%;
+  z-index: 9;
+}
+
+.movieText h2 {
+  font-size: 3.5vw;
+  font-weight: 900;
+  text-align: center;
+}
+
+.movieText p {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.page6 {
+  border-top: 7px solid #3e3232;
+  height: auto;
+  padding-bottom: 10vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page6 h1 {
+  font-size: 4vw;
+  margin: 15px;
+  margin-top: 60px;
+}
+
+.page6 h3 {
+  font-size: 20px;
+  margin: 15px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.FAQ {
+  margin-top: 7px;
+  height: 14vh;
+  width: 65%;
+  background-color: #2a2626;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  font-size: 2vw;
+}
+
+.description {
+  margin-top: 3px;
+  height: auto;
+  width: 65%;
+  background-color: #2a2626;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.description {
+  display: none;
+}
+
+.description h2 {
+  font-size: 2vw;
+}
+
+#cross1,
+#cross2,
+#cross3,
+#cross4,
+#cross5,
+#cross6 {
+  display: none;
+}
+
+#description1,
+#description2,
+#description3,
+#description4,
+#description5,
+#description6 {
+  display: none;
+}
+
+.plus {
+  display: block;
+}
+
+/* .container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 47, 66);
+  } */
+
+footer {
+  border-top: 7px solid #3e3232;
+  height: 63vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footerdiv {
+  display: flex;
+}
+
+.footdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 40vh;
+  width: 15vw;
+  line-height: 6vh;
+}
+
+.footdiv a {
+  color: #e3bfbf;
+}
+
+@media screen and (max-width: 960px) {
+  .emailG {
+    flex-direction: column;
+  }
+
+  .movies {
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .footerdiv {
+    flex-direction: column;
+  }
+
+  .footdiv {
+    line-height: 3vh;
+  }
+
+  .movies img {
+    height: 30vh;
+  }
+
+  .movies h2 {
+    font-size: 5vw;
+  }
+
+  .movies p {
+    font-size: 3vw;
+  }
+
+  .page4 video {
+    height: 14vh;
+  }
+
+  video {
+    height: 16.1vh;
+  }
+
+  #front-text {
+    margin-top: 70%;
+    margin: 25vh 0;
+  }
+
+  #front-text h1 {
+    font-size: 8vw;
+  }
+
+  nav img {
+    height: 14vw;
+  }
+
+  #getemail h3 {
+    font-size: 16px;
+  }
+
+  .page6 {
+    height: 100vh;
+  }
+
+  .page6 span {
+    font-size: 4vw;
+  }
+
+  .FAQ {
+    height: 7vh;
+  }
+
+  .input2 {
+    height: 6vh;
+    width: 40vw;
+    font-size: 20px;
+  }
+
+  .input1 {
+    height: 4vh;
+    width: 60vw;
+    font-size: 25px;
+  }
+
+  .language select {
+    width: 10vw;
+  }
+
+  .signin button {
+    height: 5vh;
+    width: 15vw;
+  }
+
+  .footdiv {
+    height: 20vh;
+    width: 30vw;
+  }
+
+  footer {
+    height: 50vh;
+  }
+}
