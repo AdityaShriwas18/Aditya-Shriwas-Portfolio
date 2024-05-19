@@ -38,4 +38,4 @@ https://adityashriwas18.github.io/Aditya-Shriwas-Portfolio/
 
 ## Usage
 
-Modify the content of the HTML, CSS, and JavaScript files to customize the portfolio with your my own information, projects, and styling preferences.
+Modify the content of the HTML, CSS, and JavaScript files to customize the portfolio with my information, projects, and styling preferences.
