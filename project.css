@@ -94,10 +94,9 @@ section {
 
 #projects {
   display: flex;
-  flex-wrap: wrap;
   gap: 5vw;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .portfolio h2 {
@@ -118,7 +117,7 @@ section {
   height: 250px;
   display: flex;
   border-radius: 2rem;
-  box-shadow: 0 0 7rem rgba(4, 4, 4, 0.985);
+  /* box-shadow: 0 0 7rem rgba(4, 4, 4, 0.985); */
   overflow: hidden;
 }
 
@@ -194,5 +193,25 @@ section {
 
   .portfolio-container .portfolio-box {
     height: 200px;
+  }
+}
+
+.infinite-scroller {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroll-wrapper {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
