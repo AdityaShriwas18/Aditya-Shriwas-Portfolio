@@ -7,7 +7,7 @@ This is a portfolio website project created using HTML, CSS, and JavaScript. It 
 - [Description](#description)
 - [Technologies Used](#technologies-used)
 - [Sections](#sections)
-- [watch Live](#setup)
+- [Watch Live](#watch-live)
 - [Usage](#usage)
 
 
@@ -32,7 +32,7 @@ This portfolio website showcases my professional information, skills, projects, 
 - Responsive design for various devices
 - Interactive elements using JavaScript
 
-## watch live
+## Watch Live
 
 https://adityashriwas.vercel.app/
 
