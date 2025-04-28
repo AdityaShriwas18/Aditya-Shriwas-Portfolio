@@ -344,7 +344,7 @@
           <span class="animate scroll" style="--i: 9"></span>
         </div>
       </form>
-      <h2 style="color:white;text-align:center;margin-left: 50%;">Form services are currently unavailable<h2></h2>
+      <h2 id="result-text" style="color:white;text-align:center;margin-left: 50%;"></h2>
     </section>
 
     <footer class="footer">
@@ -360,5 +360,37 @@
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const form = document.getElementById('contact-form');
+  const resultText = document.getElementById('result-text');
+
+  form.addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent form from reloading page
+
+    resultText.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    formData.append("access_key", "cb20385b-cb35-4bde-bdef-b8f8c00d87e3"); 
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        resultText.textContent = "Form Submitted Successfully!";
+        form.reset();
+      } else {
+        console.log("Error:", data);
+        resultText.textContent = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      re
+    </script>
   </body>
 </html>
