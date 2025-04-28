@@ -6,8 +6,8 @@ This is a portfolio website project created using HTML, CSS, and JavaScript. It 
 
 - [Description](#description)
 - [Technologies Used](#technologies-used)
-- [Features](#features)
-- [watch Live](#setup)
+- [Sections](#sections)
+- [Watch Live](#watch-live)
 - [Usage](#usage)
 
 
@@ -22,7 +22,7 @@ This portfolio website showcases my professional information, skills, projects, 
 - JavaScript
 - SMTP. js
 
-## Features
+## Sections
 
 - Educational information section
 - Experience information section
@@ -32,9 +32,9 @@ This portfolio website showcases my professional information, skills, projects, 
 - Responsive design for various devices
 - Interactive elements using JavaScript
 
-## watch live
+## Watch Live
 
-https://adityashriwas18.github.io/Aditya-Shriwas-Portfolio/
+https://adityashriwas.vercel.app/
 
 ## Usage
 
