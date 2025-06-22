@@ -84,10 +84,12 @@ section {
 }
 
 .home {
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   padding: 0 9%;
+  /* background: url('./adityashriwas.png') no-repeat; */
+  background-position: right;
 }
 
 .home-content {
@@ -105,7 +107,7 @@ section {
 
 .home-content .text-animate {
   position: relative;
-  width: 32.8rem;
+  width: 34rem;
 }
 
 .home-content .text-animate h3 {
@@ -258,6 +260,7 @@ section {
   width: 44%;
   height: 100%;
   background: transparent;
+  transition: 3s;
 }
 
 .home-imgHover:hover {
@@ -507,12 +510,13 @@ span {
   justify-content: center;
   height: 100px;
   width: 100px;
+  padding: 2px 4px;
   background-color: white;
   border-radius: 20px;
 }
 
 .skills-content .skill span {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .skills-content .skill i {
@@ -726,7 +730,7 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   .MYimg {
     display: none;
   }
@@ -734,7 +738,7 @@ section:nth-child(odd) .animate.scroll,
   .MYimg2 {
     display: block;
   }
-}
+} */
 
 @media (max-width: 900px) {
   .header {

@@ -94,12 +94,16 @@ section {
 
 #projects {
   display: flex;
+  gap: 5vw;
+}
+
+#Functional{
+  display: flex;
   flex-wrap: wrap;
   gap: 5vw;
   align-items: center;
   justify-content: center;
 }
-
 .portfolio h2 {
   margin-bottom: 4rem;
 }
@@ -118,7 +122,7 @@ section {
   height: 250px;
   display: flex;
   border-radius: 2rem;
-  box-shadow: 0 0 7rem rgba(4, 4, 4, 0.985);
+  /* box-shadow: 0 0 7rem rgba(4, 4, 4, 0.985); */
   overflow: hidden;
 }
 
