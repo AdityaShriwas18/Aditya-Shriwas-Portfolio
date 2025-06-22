@@ -34,7 +34,7 @@ This portfolio website showcases my professional information, skills, projects, 
 
 ## Watch Live
 
-https://adityashriwas.vercel.app/
+https://aadityashriwas.vercel.app/
 
 ## Usage
 
